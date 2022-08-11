@@ -45,7 +45,7 @@ class Hockey implements Game, Visitable {
 
 }
 
-class GamePlayer implements Visitor {
+public class GamePlayer implements Visitor {
 
 	@Override
 	public void playGame(Game game) {
