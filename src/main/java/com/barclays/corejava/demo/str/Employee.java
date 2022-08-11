@@ -1,10 +1,23 @@
 package com.barclays.corejava.demo.str;
 
+import java.io.Serializable;
+
+class Department implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private int departmentId;
+	private String departmentName;
+	private String location;
+
+}
+
 public class Employee {
 
 	private int employeeId; // id value User AppUser
 	private String firstName; // name
 	private double salary;
+	private Department department;
 
 	public Employee() {
 		super();

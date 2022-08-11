@@ -26,9 +26,11 @@ public class StreamDemo {
 //				System.out.println(e.toString());
 //		});
 
-		// fullform 
+		// fullform
 		Stream<Employee> empStream = empList.stream();
 		List<Employee> firstThreeEmps = empStream.limit(3).collect(Collectors.toList());
+
+//		limit() skip() map() 
 
 		// shortcut
 //		List<Employee> firstThreeEmps = empList.stream().limit(3).collect(Collectors.toList());
