@@ -6,7 +6,7 @@ public class ColDemo {
 
 		System.out.println("Start");
 
-		int[] myMarks = { 99, 97, 98, 96, 95 };
+		int[] myMarks = { 99, /* 97.75, */ 98, 96, 95 };
 
 		for (int num : myMarks)
 			System.out.println(num);
