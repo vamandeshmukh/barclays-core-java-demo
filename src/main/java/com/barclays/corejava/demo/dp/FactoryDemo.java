@@ -1,5 +1,8 @@
 package com.barclays.corejava.demo.dp;
 
+import com.barclays.corejava.demo.banking.Bank;
+import com.barclays.corejava.demo.banking.BankingFactory;
+
 // factory method design pattern 
 
 public class FactoryDemo {
@@ -14,6 +17,10 @@ public class FactoryDemo {
 
 		Bank bank3 = BankingFactory.genInstance("Deutsche");
 		bank3.service();
+
+//		Bank bank4 = new Citi(); // this should not work
+//		bank4.service();
+
 	}
 
 }
