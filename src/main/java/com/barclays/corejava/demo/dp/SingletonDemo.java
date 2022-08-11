@@ -1,5 +1,8 @@
 package com.barclays.corejava.demo.dp;
 
+// creational design pattern 
+// singleton class 
+
 public class SingletonDemo {
 
 	public static void main(String[] args) {
