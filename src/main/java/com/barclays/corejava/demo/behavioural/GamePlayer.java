@@ -49,6 +49,6 @@ public class GamePlayer implements Visitor {
 
 	@Override
 	public void playGame(Game game) {
-		System.out.println(this.getClass().toString() + " is being played!");
+		System.out.println(" Game is being played!");
 	}
 }

@@ -5,6 +5,7 @@ public class VistorDemo {
 	public static void main(String[] args) {
 
 		System.out.println("Start");
+
 		Visitor player = new GamePlayer();
 		Visitable game = new Cricket();
 		game.accept(player);
