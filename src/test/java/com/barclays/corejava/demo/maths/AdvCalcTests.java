@@ -11,7 +11,6 @@ public class AdvCalcTests {
 	public void addNumsTest() {
 		AdvCalc ac = new AdvCalc();
 		assertEquals(60, ac.addNumsWithGst(10, 20, 30));
-
 	}
 
 	@Test
