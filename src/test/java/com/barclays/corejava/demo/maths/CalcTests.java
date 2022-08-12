@@ -4,7 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class CalcTests {
@@ -21,6 +23,16 @@ public class CalcTests {
 	public static void finish() {
 		System.out.println("finish");
 		calc = null;
+	}
+
+	@BeforeEach
+	public void runEveryTime() {
+		System.out.println("once before each test case");
+	}
+
+	@AfterEach
+	public void runEveryTimeAfterwards() {
+		System.out.println("once after each test case");
 	}
 
 	@Test
