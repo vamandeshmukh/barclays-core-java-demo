@@ -8,4 +8,9 @@ public class Calc {
 
 	}
 
+	public int subNums(int i, int j) {
+
+		return i - j;
+
+	}
 }
