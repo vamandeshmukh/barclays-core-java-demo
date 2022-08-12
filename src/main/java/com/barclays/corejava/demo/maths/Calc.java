@@ -13,4 +13,19 @@ public class Calc {
 		return i - j;
 
 	}
+
+	public int divNums(int i, int j) {
+
+		return i / j;
+
+	}
+
+	public double piValue() {
+		try {
+			Thread.sleep(2975);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return 3.142;
+	}
 }

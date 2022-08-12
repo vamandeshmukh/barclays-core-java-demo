@@ -2,12 +2,17 @@ package com.barclays.corejava.demo.maths;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 public class CalcTests {
 
@@ -50,6 +55,7 @@ public class CalcTests {
 		assertNotEquals(unexpected, actual);
 	}
 
+//	@Disabled
 	@Test
 	public void subNumsTest() {
 		int expected = 5;
@@ -63,4 +69,19 @@ public class CalcTests {
 		int actual = calc.subNums(10, 5);
 		assertNotEquals(unexpected, actual);
 	}
+
+	@Disabled
+	@Test
+	@Timeout(value = 3000, unit = TimeUnit.MILLISECONDS)
+	public void piValueTest() {
+		assertEquals(3.142, calc.piValue());
+
+	}
+
+	@Test
+	public void divNumsTest() {
+		assertThrows(ArithmeticException.class, () -> calc.divNums(10, 0));
+//		assertThrows(NumberFormatException.class, () -> calc.divNums(10, 0));
+	}
+
 }
